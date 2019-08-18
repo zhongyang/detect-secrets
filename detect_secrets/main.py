@@ -21,6 +21,11 @@ def parse_args(argv):
 
 
 def main(argv=None):
+
+    reload(sys)
+    sys.setdefaultencoding('utf-8')
+
+
     if len(sys.argv) == 1:  # pragma: no cover
         sys.argv.append('-h')
 
